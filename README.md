@@ -27,8 +27,6 @@ Standard Code | Description            | Note
 503           | Service Unavailable    |
 
 
-
-
 Custom Code   | Description                 | Note  
 :------------:| --------------------------- |-----:
 601           | Account Exists              |   
@@ -46,7 +44,6 @@ Custom Code   | Description                 | Note
 613           | Member Inactive             |
 614           | Member Validation Error     |
 621           | Corporation Not Found       |
-
 651           | Product Not Found           |
 652           | Product Inactive            |
 653           | Product Quantity Changed    |
@@ -75,12 +72,10 @@ Custom Code   | Description                 | Note
 730           | Checkout Fail               |
 731           |  |
 741           | Coupon Not Found            |
-
 901           | Parameter Incorrect         |
 902           | Operation Refused           |
 903           | Operation Error             |
 904           |     |
-
 
 
 
