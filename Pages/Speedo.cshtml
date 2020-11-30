@@ -1,0 +1,60 @@
+@page "{id}"
+@model SpeedoModel
+@{
+    Layout = null;
+    ViewData["Title"] = "RunRunRun";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SlimeRacing - @ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <style>
+        .slime { font-weight: bold}
+        .slime0 { background-color:#FF5D5B }
+        .slime0:active { background-color:#FFBDEC }
+        .slime1 { background-color:#FFA15B }
+        .slime1:active { background-color:#FFD75B }
+        .slime2 { background-color:#FFFA5A }
+        .slime2:active { background-color:#FFE95B }
+        .slime3 { background-color:#5BFF80 }
+        .slime3:active { background-color:#94FF62 }
+        .slime4 { background-color:#5A82FF }
+        .slime4:active { background-color:#61F3FE }
+        .slime5 { background-color:#8B63FF }
+        .slime5:active { background-color:#F85BFF }
+
+        .vertical-center {
+            min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+            min-height: 100vh; /* These two lines are counted as one :-)       */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body ontouchstart="" style="background-color:#DECFBD">
+    <header></header>
+    <div class="container vertical-center">
+        <main role="main" class="">
+            <div class="row text-center">
+                <div class="col-12" style="">
+                    <img id="indicatorImg" src="~/images/slime/R3.png" style="width:30%;">
+                </div>
+            </div>
+            <br>
+            <div class="row text-center">
+                <div class="col-12">
+                    <input type="button" id="goButton" class="btn btn-lg slime slime@(Model.Id)" value="GoGoGo @Model.Id" data-id=@Model.Id />
+                </div>
+            </div>
+        </main>
+    </div>
+    @*<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>*@
+    <script src="~/js/signalr/dist/browser/signalr.js"></script>
+    <script src="~/js/speedo.js"></script>
+</body>
+</html>
