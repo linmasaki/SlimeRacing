@@ -2,6 +2,7 @@
 
 ## Publish
 `dotnet publish -c Release -r linux-x64 --self-contained false -o bin\Release\netcoreapp3.1\SlimeRacingPublisher`
+
 `dotnet publish -c Debug -r linux-x64 --self-contained false -o bin\Release\netcoreapp3.1\SlimeRacingPublisher`
 
 
