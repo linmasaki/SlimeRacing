@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - SlimeRacing</title>
+    <title>SlimeRacing - @ViewData["Title"]</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
 </head>
@@ -22,7 +22,7 @@
                             <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Privacy</a>
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Speedo" asp-route-id="0">Speedo</a>
                         </li>
                     </ul>
                 </div>
@@ -35,21 +35,9 @@
         </main>
     </div>
 
-    <div class="row">
-        <div class="col-12">
-            <img src="~/images/slime/1.gif" alt="1" id="slime1" style="position:relative; left: 0px; width: 10%"><br>
-            <img src="~/images/slime/2.gif" alt="2" id="slime2" style="position:relative; left: 0px; width: 10%"><br>
-            <img src="~/images/slime/3.gif" alt="3" id="slime3" style="position:relative; left: 0px; width: 10%"><br>
-            <img src="~/images/slime/4.gif" alt="4" id="slime4" style="position:relative; left: 0px; width: 10%"><br>
-            <img src="~/images/slime/5.gif" alt="5" id="slime5" style="position:relative; left: 0px; width: 10%"><br>
-            <img src="~/images/slime/6.gif" alt="6" id="slime6" style="position:absolute; left: 0px; width: 10%">
-            <hr />
-        </div>
-    </div>
-
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2020 - SlimeRacing - <a asp-area="" asp-page="/Privacy">Privacy</a>
+            &copy; 2020 - SlimeRacing
         </div>
     </footer>
 
