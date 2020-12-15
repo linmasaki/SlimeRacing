@@ -1,9 +1,9 @@
 # Slime Racing
 ### A real-time game develops with SignalR.
-
 ![Image](demo_1.jpg)
 
 ## Introduction
+![Image](demo_2.jpeg)
 
 ### Race Track URL
 http://localhost:5010
